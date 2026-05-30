@@ -1,0 +1,142 @@
+.index-page {
+  background: linear-gradient(180deg, #edf5ff 0%, #f7f9fc 48%, #f4f7fb 100%);
+}
+
+.hero {
+  padding: 32rpx;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #eaf4ff 100%);
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+}
+
+.logo-mark {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f7a44, #1677ff);
+  color: #ffffff;
+  font-size: 24rpx;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48rpx;
+}
+
+.bank-info {
+  margin-left: 14rpx;
+}
+
+.bank-name {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #111827;
+}
+
+.bank-subtitle {
+  margin-top: 4rpx;
+  color: #8b95a1;
+  font-size: 16rpx;
+  letter-spacing: 1rpx;
+}
+
+.hero-main {
+  margin-top: 54rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: #111827;
+  font-size: 56rpx;
+  font-weight: 800;
+  letter-spacing: 1rpx;
+}
+
+.subtitle {
+  margin-top: 18rpx;
+  color: #5f6b7a;
+  font-size: 30rpx;
+}
+
+.mascot {
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 48rpx;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #d7f7ff 34%, #6bd5e5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18rpx 40rpx rgba(36, 169, 205, 0.22);
+}
+
+.mascot-face {
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1677ff;
+  font-size: 34rpx;
+  font-weight: 800;
+  text-align: center;
+  line-height: 92rpx;
+}
+
+.action-card {
+  margin-top: 28rpx;
+  padding: 28rpx;
+}
+
+.about-button {
+  margin-top: 20rpx;
+}
+
+.feature-grid {
+  margin-top: 28rpx;
+  display: flex;
+}
+
+.feature-card {
+  flex: 1;
+  padding: 28rpx 22rpx;
+}
+
+.feature-card + .feature-card {
+  margin-left: 22rpx;
+}
+
+.feature-icon {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 20rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 64rpx;
+  text-align: center;
+}
+
+.feature-icon.blue {
+  background: linear-gradient(135deg, #3692ff, #075de1);
+}
+
+.feature-icon.green {
+  background: linear-gradient(135deg, #55d26f, #159447);
+}
+
+.feature-title {
+  margin-top: 22rpx;
+  color: #172033;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.feature-desc {
+  margin-top: 8rpx;
+  color: #7b8794;
+  font-size: 24rpx;
+  line-height: 1.5;
+}

@@ -1,0 +1,40 @@
+.header {
+  padding: 34rpx 30rpx;
+  background: linear-gradient(135deg, #ffffff, #eaf4ff);
+}
+
+.header-title {
+  color: #111827;
+  font-size: 42rpx;
+  font-weight: 800;
+}
+
+.header-desc {
+  margin-top: 16rpx;
+  color: #64748b;
+  font-size: 27rpx;
+  line-height: 1.6;
+}
+
+.info-card {
+  margin-top: 24rpx;
+  padding: 30rpx;
+}
+
+.section-title {
+  color: #172033;
+  font-size: 31rpx;
+  font-weight: 800;
+}
+
+.paragraph,
+.list-item {
+  margin-top: 16rpx;
+  color: #4b5563;
+  font-size: 27rpx;
+  line-height: 1.7;
+}
+
+.primary-button {
+  margin-top: 32rpx;
+}
