@@ -1,0 +1,93 @@
+.result-hero {
+  padding: 42rpx 30rpx;
+  text-align: center;
+}
+
+.result-label {
+  color: #64748b;
+  font-size: 28rpx;
+}
+
+.result-money {
+  margin-top: 14rpx;
+  font-size: 64rpx;
+  font-weight: 900;
+  letter-spacing: 1rpx;
+}
+
+.result-meta {
+  margin-top: 16rpx;
+  color: #7b8794;
+  font-size: 24rpx;
+}
+
+.detail-card {
+  margin-top: 24rpx;
+  padding: 28rpx;
+}
+
+.section-title {
+  color: #172033;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.detail-row,
+.input-row {
+  padding: 24rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eef1f5;
+}
+
+.detail-row:last-child,
+.input-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.detail-name,
+.input-label {
+  color: #273244;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.detail-formula {
+  margin-top: 8rpx;
+  color: #7b8794;
+  font-size: 24rpx;
+}
+
+.detail-amount {
+  color: #0f5fd5;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.input-value {
+  max-width: 420rpx;
+  color: #64748b;
+  font-size: 26rpx;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.notice {
+  margin-top: 24rpx;
+  padding: 24rpx 28rpx;
+  color: #8a5a00;
+  background: #fff8e7;
+  font-size: 25rpx;
+  line-height: 1.6;
+  box-shadow: none;
+}
+
+.button-group {
+  margin-top: 30rpx;
+}
+
+.home-button {
+  margin-top: 18rpx;
+}

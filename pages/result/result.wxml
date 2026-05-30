@@ -1,0 +1,35 @@
+<view class="container result-page">
+  <view wx:if="{{resultPayload}}">
+    <view class="result-hero card" style="background: {{product.gradient}};">
+      <view class="result-label">合计绩效薪酬</view>
+      <view class="result-money" style="color: {{product.color}};">¥ {{totalText}}</view>
+      <view class="result-meta">{{product.name}} · 测算时间：{{resultPayload.time}}</view>
+    </view>
+
+    <view class="detail-card card">
+      <view class="section-title">测算明细</view>
+      <view wx:for="{{items}}" wx:key="name" class="detail-row">
+        <view>
+          <view class="detail-name">{{item.name}}</view>
+          <view class="detail-formula">{{item.formula}}</view>
+        </view>
+        <view class="detail-amount">¥ {{item.amountText}}</view>
+      </view>
+    </view>
+
+    <view class="detail-card card">
+      <view class="section-title">本次输入</view>
+      <view wx:for="{{inputRows}}" wx:key="label" class="input-row">
+        <view class="input-label">{{item.label}}</view>
+        <view class="input-value">{{item.value}}</view>
+      </view>
+    </view>
+
+    <view class="notice card">本结果仅供内部测算参考，实际绩效结果以最终考核口径为准。</view>
+
+    <view class="button-group">
+      <button class="primary-button" bindtap="backCalc">返回修改</button>
+      <button class="secondary-button home-button" bindtap="goHome">回到首页</button>
+    </view>
+  </view>
+</view>

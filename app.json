@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/calc/calc",
+    "pages/result/result",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarTitleText": "知心小助手",
+    "navigationBarBackgroundColor": "#f6f9ff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f9ff",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
