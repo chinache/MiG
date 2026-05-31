@@ -64,12 +64,21 @@
 }
 
 .mascot-box {
-  position: relative;
-  flex: 0 0 142rpx;
-  width: 142rpx;
-  height: 132rpx;
-  margin-left: 24rpx;
+    position: relative;
+    flex: 0 0 150rpx;
+    width: 150rpx;
+    height: 140rpx;
+    margin-left: 24rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
+.mascot-img {
+  width: 150rpx;
+  height: 140rpx;
+  display: block;
+  }
 
 .mascot-halo {
   position: absolute;
