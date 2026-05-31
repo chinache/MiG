@@ -202,6 +202,7 @@
   opacity: 0.72;
 }
 
+/* 四宫格业务入口布局：保留贷款、存款、保险、黄金四个独立入口。 */
 .business-grid {
   display: flex;
   flex-wrap: wrap;

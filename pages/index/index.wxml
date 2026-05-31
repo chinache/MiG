@@ -32,7 +32,7 @@
     <view class="cloud cloud-two"></view>
   </view>
 
-  <view class="business-grid">
+  <view class="business-grid" data-role="business-grid">
     <view
       wx:for="{{businessEntries}}"
       wx:key="title"
