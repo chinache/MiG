@@ -7,15 +7,8 @@
         <view class="hero-title">测算黄金业务收入</view>
         <view class="hero-subtitle">及时准确 收益清晰</view>
       </view>
-      <view class="mascot-box" aria-label="吉祥物占位区域">
-        <view class="mascot-halo"></view>
-        <view class="mascot-face">
-          <view class="mascot-eye left"></view>
-          <view class="mascot-eye right"></view>
-          <view class="mascot-smile"></view>
-        </view>
-        <view class="mascot-ear left"></view>
-        <view class="mascot-ear right"></view>
+      <view class="mascot-box">
+      <image class="mascot-img" src="/assets/images/mascot-gold.png" mode="aspectFit"></image>
       </view>
     </view>
 
