@@ -210,7 +210,7 @@
 }
 
 .business-card {
-  width: 330rpx;
+  width: 48.5%;
   min-height: 226rpx;
   margin-bottom: 20rpx;
   padding: 28rpx 18rpx 24rpx;

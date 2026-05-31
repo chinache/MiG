@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/calc/calc",
+    "pages/result/result",
+    "pages/about/about",
     "pages/loan/loan",
     "pages/deposit/deposit",
     "pages/insurance/insurance",
-    "pages/gold/gold",
-    "pages/calc/calc",
-    "pages/result/result",
-    "pages/about/about"
+    "pages/gold/gold"
   ],
   "window": {
     "navigationBarTitleText": "知心小助手",

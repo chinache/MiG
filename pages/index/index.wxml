@@ -38,6 +38,7 @@
       wx:key="title"
       class="business-card {{item.theme}}"
       data-url="{{item.url}}"
+      data-page="{{item.title}}"
       bindtap="goBusiness"
     >
       <view class="business-icon {{item.theme}}">{{item.icon}}</view>
