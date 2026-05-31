@@ -13,40 +13,50 @@
   align-items: center;
 }
 
-.logo-mark {
-  width: 48rpx;
-  height: 48rpx;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0f7a44, #1677ff);
-  color: #ffffff;
+.logo-placeholder {
+  width: 112rpx;
+  height: 112rpx;
+  border: 2rpx dashed #7aa7d9;
+  border-radius: 28rpx;
+  background: rgba(255, 255, 255, 0.68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-placeholder-text {
+  color: #1769e0;
   font-size: 24rpx;
   font-weight: 700;
-  text-align: center;
-  line-height: 48rpx;
+  letter-spacing: 2rpx;
 }
 
 .bank-info {
-  margin-left: 14rpx;
+  margin-left: 20rpx;
 }
 
 .bank-name {
-  font-size: 28rpx;
+  font-size: 30rpx;
   font-weight: 700;
   color: #111827;
 }
 
 .bank-subtitle {
-  margin-top: 4rpx;
+  margin-top: 8rpx;
   color: #8b95a1;
-  font-size: 16rpx;
-  letter-spacing: 1rpx;
+  font-size: 22rpx;
 }
 
 .hero-main {
-  margin-top: 54rpx;
+  margin-top: 50rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 24rpx;
 }
 
 .title {
@@ -62,80 +72,96 @@
   font-size: 30rpx;
 }
 
-.mascot {
-  width: 164rpx;
-  height: 164rpx;
-  border-radius: 48rpx;
-  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #d7f7ff 34%, #6bd5e5 100%);
+.mascot-placeholder {
+  width: 172rpx;
+  height: 188rpx;
+  border: 2rpx dashed #7fd4de;
+  border-radius: 54rpx 54rpx 40rpx 40rpx;
+  background: linear-gradient(180deg, rgba(238, 252, 255, 0.96), rgba(215, 247, 255, 0.86));
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 18rpx 40rpx rgba(36, 169, 205, 0.22);
+  color: #1596a6;
+  box-shadow: 0 18rpx 40rpx rgba(36, 169, 205, 0.14);
 }
 
-.mascot-face {
-  width: 92rpx;
-  height: 92rpx;
+.mascot-placeholder-head {
+  width: 66rpx;
+  height: 66rpx;
   border-radius: 50%;
   background: #ffffff;
-  color: #1677ff;
-  font-size: 34rpx;
-  font-weight: 800;
+  border: 2rpx solid rgba(21, 150, 166, 0.18);
+}
+
+.mascot-placeholder-body {
+  margin-top: 14rpx;
+  width: 112rpx;
   text-align: center;
-  line-height: 92rpx;
+  font-size: 22rpx;
+  line-height: 1.35;
 }
 
-.action-card {
-  margin-top: 28rpx;
-  padding: 28rpx;
+.business-section {
+  margin-top: 34rpx;
 }
 
-.about-button {
-  margin-top: 20rpx;
-}
-
-.feature-grid {
-  margin-top: 28rpx;
-  display: flex;
-}
-
-.feature-card {
-  flex: 1;
-  padding: 28rpx 22rpx;
-}
-
-.feature-card + .feature-card {
-  margin-left: 22rpx;
-}
-
-.feature-icon {
-  width: 64rpx;
-  height: 64rpx;
-  border-radius: 20rpx;
-  color: #ffffff;
-  font-size: 28rpx;
+.section-title {
+  margin-bottom: 22rpx;
+  color: #172033;
+  font-size: 32rpx;
   font-weight: 700;
-  line-height: 64rpx;
+}
+
+.business-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -11rpx;
+}
+
+.business-card {
+  width: calc(50% - 22rpx);
+  min-height: 220rpx;
+  margin: 11rpx;
+  padding: 30rpx 24rpx;
+}
+
+.business-icon {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 22rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+  font-weight: 800;
+  line-height: 68rpx;
   text-align: center;
 }
 
-.feature-icon.blue {
+.business-icon.blue {
   background: linear-gradient(135deg, #3692ff, #075de1);
 }
 
-.feature-icon.green {
+.business-icon.green {
   background: linear-gradient(135deg, #55d26f, #159447);
 }
 
-.feature-title {
-  margin-top: 22rpx;
+.business-icon.orange {
+  background: linear-gradient(135deg, #ffb15d, #f06b21);
+}
+
+.business-icon.gold {
+  background: linear-gradient(135deg, #ffd86b, #d69a00);
+}
+
+.business-name {
+  margin-top: 24rpx;
   color: #172033;
-  font-size: 30rpx;
+  font-size: 32rpx;
   font-weight: 700;
 }
 
-.feature-desc {
-  margin-top: 8rpx;
+.business-desc {
+  margin-top: 10rpx;
   color: #7b8794;
   font-size: 24rpx;
   line-height: 1.5;

@@ -1,0 +1,38 @@
+.business-page {
+  background: linear-gradient(180deg, #edf5ff 0%, #f7f9fc 100%);
+}
+
+.page-header {
+  padding: 34rpx 30rpx;
+}
+
+.page-title {
+  color: #111827;
+  font-size: 44rpx;
+  font-weight: 800;
+}
+
+.page-desc {
+  margin-top: 18rpx;
+  color: #5f6b7a;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+.placeholder-card {
+  margin-top: 28rpx;
+  padding: 30rpx;
+}
+
+.placeholder-title {
+  color: #172033;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.placeholder-text {
+  margin-top: 14rpx;
+  color: #7b8794;
+  font-size: 26rpx;
+  line-height: 1.6;
+}

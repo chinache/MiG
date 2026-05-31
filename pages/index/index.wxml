@@ -1,39 +1,35 @@
 <view class="container index-page">
   <view class="hero card">
     <view class="brand-row">
-      <view class="logo-mark">龙</view>
+      <view class="logo-placeholder">
+        <view class="logo-placeholder-text">LOGO</view>
+      </view>
       <view class="bank-info">
         <view class="bank-name">龙泉农商银行</view>
-        <view class="bank-subtitle">LONGQUAN RURAL COMMERCIAL BANK</view>
+        <view class="bank-subtitle">logo 占位区域</view>
       </view>
     </view>
 
     <view class="hero-main">
-      <view>
+      <view class="hero-text">
         <view class="title">知心小助手</view>
-        <view class="subtitle">绩效薪酬测算工具</view>
+        <view class="subtitle">一键测算 更清晰</view>
       </view>
-      <view class="mascot">
-        <view class="mascot-face">薪</view>
+      <view class="mascot-placeholder">
+        <view class="mascot-placeholder-head"></view>
+        <view class="mascot-placeholder-body">吉祥物占位</view>
       </view>
     </view>
   </view>
 
-  <view class="action-card card">
-    <button class="primary-button" bindtap="goCalc">进入测算</button>
-    <button class="secondary-button about-button" bindtap="goAbout">查看使用说明</button>
-  </view>
-
-  <view class="feature-grid">
-    <view class="feature-card card">
-      <view class="feature-icon blue">存</view>
-      <view class="feature-title">本地计算</view>
-      <view class="feature-desc">无需后台，打开即可测算</view>
-    </view>
-    <view class="feature-card card">
-      <view class="feature-icon green">准</view>
-      <view class="feature-title">集中公式</view>
-      <view class="feature-desc">公式统一维护，便于替换</view>
+  <view class="business-section">
+    <view class="section-title">请选择业务类型</view>
+    <view class="business-grid">
+      <view wx:for="{{businessEntries}}" wx:key="key" class="business-card card" data-url="{{item.url}}" bindtap="goBusiness">
+        <view class="business-icon {{item.theme}}">{{item.icon}}</view>
+        <view class="business-name">{{item.name}}</view>
+        <view class="business-desc">{{item.desc}}</view>
+      </view>
     </view>
   </view>
 
