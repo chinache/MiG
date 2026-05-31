@@ -26,7 +26,7 @@
           class="weight-input"
           type="digit"
           value="{{gramWeight}}"
-          placeholder="100"
+          placeholder="请输入克重"
           placeholder-class="input-placeholder"
           bindinput="onWeightInput"
         />
