@@ -1,6 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/loan/loan",
+    "pages/deposit/deposit",
+    "pages/insurance/insurance",
+    "pages/gold/gold",
     "pages/calc/calc",
     "pages/result/result",
     "pages/about/about"
