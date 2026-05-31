@@ -1,0 +1,7 @@
+<view class="business-page gold-page">
+  <view class="placeholder-card">
+    <view class="placeholder-icon">金</view>
+    <view class="page-title">黄金薪酬</view>
+    <view class="page-desc">黄金业务独立测算页面建设中</view>
+  </view>
+</view>

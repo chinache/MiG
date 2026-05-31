@@ -1,0 +1,7 @@
+<view class="business-page deposit-page">
+  <view class="placeholder-card">
+    <view class="placeholder-icon">存</view>
+    <view class="page-title">存款薪酬</view>
+    <view class="page-desc">存款业务独立测算页面建设中</view>
+  </view>
+</view>

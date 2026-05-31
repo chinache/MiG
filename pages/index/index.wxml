@@ -1,0 +1,55 @@
+<view class="index-page">
+  <view class="hero-shell">
+    <view class="brand-row">
+      <view class="logo-mark">
+        <view class="logo-wave logo-wave-white"></view>
+        <view class="logo-wave logo-wave-gold"></view>
+      </view>
+      <view class="bank-info">
+        <view class="bank-name">龙泉农商银行</view>
+        <view class="bank-subtitle">LONGQUAN RURAL COMMERCIAL BANK</view>
+      </view>
+    </view>
+
+    <view class="hero-main">
+      <view class="hero-copy">
+        <view class="title">知心小助手</view>
+        <view class="subtitle">一键测算 更清晰</view>
+      </view>
+      <view class="mascot-wrap">
+        <view class="mascot-hair hair-left"></view>
+        <view class="mascot-hair hair-right"></view>
+        <view class="mascot-face">
+          <view class="mascot-eye eye-left"></view>
+          <view class="mascot-eye eye-right"></view>
+          <view class="mascot-smile"></view>
+        </view>
+        <view class="mascot-body">薪</view>
+      </view>
+    </view>
+
+    <view class="cloud cloud-one"></view>
+    <view class="cloud cloud-two"></view>
+  </view>
+
+  <view class="business-grid">
+    <view
+      wx:for="{{businessEntries}}"
+      wx:key="title"
+      class="business-card {{item.theme}}"
+      data-url="{{item.url}}"
+      bindtap="goBusiness"
+    >
+      <view class="business-icon {{item.theme}}">{{item.icon}}</view>
+      <view class="business-title">{{item.title}}</view>
+      <view class="business-desc">{{item.desc}}</view>
+    </view>
+  </view>
+
+  <view class="bank-footer">
+    <view class="footer-line"></view>
+    <view class="footer-logo">龙</view>
+    <view class="footer-text">龙泉农商银行</view>
+    <view class="footer-line"></view>
+  </view>
+</view>

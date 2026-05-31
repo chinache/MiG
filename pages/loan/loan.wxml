@@ -1,0 +1,7 @@
+<view class="business-page loan-page">
+  <view class="placeholder-card">
+    <view class="placeholder-icon">贷</view>
+    <view class="page-title">贷款薪酬</view>
+    <view class="page-desc">贷款业务独立测算页面建设中</view>
+  </view>
+</view>

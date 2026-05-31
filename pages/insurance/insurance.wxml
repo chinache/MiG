@@ -1,0 +1,7 @@
+<view class="business-page insurance-page">
+  <view class="placeholder-card">
+    <view class="placeholder-icon">保</view>
+    <view class="page-title">保险薪酬</view>
+    <view class="page-desc">保险业务独立测算页面建设中</view>
+  </view>
+</view>

@@ -1,0 +1,302 @@
+.index-page {
+  min-height: 100vh;
+  padding: 54rpx 28rpx 44rpx;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 48%, #f7f9fc 100%);
+  overflow-x: hidden;
+}
+
+.hero-shell {
+  position: relative;
+  min-height: 360rpx;
+  padding: 18rpx 12rpx 48rpx;
+  overflow: hidden;
+}
+
+.brand-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.logo-mark {
+  position: relative;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0c8d4c 0%, #1687d9 100%);
+  box-shadow: 0 8rpx 18rpx rgba(20, 123, 112, 0.18);
+}
+
+.logo-wave {
+  position: absolute;
+  border-radius: 999rpx;
+  transform: rotate(-10deg);
+}
+
+.logo-wave-white {
+  left: 8rpx;
+  top: 13rpx;
+  width: 28rpx;
+  height: 12rpx;
+  background: #ffffff;
+}
+
+.logo-wave-gold {
+  left: 16rpx;
+  top: 19rpx;
+  width: 26rpx;
+  height: 8rpx;
+  background: #f9d45a;
+}
+
+.bank-info {
+  margin-left: 12rpx;
+}
+
+.bank-name {
+  color: #172033;
+  font-size: 25rpx;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.bank-subtitle {
+  margin-top: 4rpx;
+  color: #8e98a6;
+  font-size: 10rpx;
+  letter-spacing: 0.4rpx;
+}
+
+.hero-main {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 58rpx;
+}
+
+.hero-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  color: #111827;
+  font-size: 46rpx;
+  font-weight: 800;
+  letter-spacing: 1rpx;
+}
+
+.subtitle {
+  margin-top: 14rpx;
+  color: #596675;
+  font-size: 24rpx;
+  letter-spacing: 1rpx;
+}
+
+.mascot-wrap {
+  position: relative;
+  width: 190rpx;
+  height: 210rpx;
+  margin-right: 12rpx;
+}
+
+.mascot-face {
+  position: absolute;
+  left: 32rpx;
+  top: 26rpx;
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 12rpx 26rpx rgba(55, 190, 190, 0.22);
+  border: 8rpx solid #71d8dc;
+}
+
+.mascot-hair {
+  position: absolute;
+  z-index: 2;
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 18rpx 44rpx 18rpx 44rpx;
+  background: linear-gradient(135deg, #65d5d8, #26aeb7);
+}
+
+.hair-left {
+  left: 36rpx;
+  top: 0;
+  transform: rotate(-24deg);
+}
+
+.hair-right {
+  right: 24rpx;
+  top: 2rpx;
+  transform: rotate(48deg);
+}
+
+.mascot-eye {
+  position: absolute;
+  top: 48rpx;
+  width: 12rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  background: #24364b;
+}
+
+.eye-left {
+  left: 36rpx;
+}
+
+.eye-right {
+  right: 36rpx;
+}
+
+.mascot-smile {
+  position: absolute;
+  left: 48rpx;
+  top: 76rpx;
+  width: 30rpx;
+  height: 16rpx;
+  border-bottom: 5rpx solid #ff8a83;
+  border-radius: 0 0 32rpx 32rpx;
+}
+
+.mascot-body {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  width: 90rpx;
+  height: 100rpx;
+  border-radius: 44rpx 44rpx 34rpx 34rpx;
+  background: linear-gradient(180deg, #58d1cf, #1aaeb8);
+  color: #ffffff;
+  font-size: 34rpx;
+  font-weight: 800;
+  line-height: 100rpx;
+  text-align: center;
+  box-shadow: 0 16rpx 30rpx rgba(28, 175, 184, 0.22);
+}
+
+.cloud {
+  position: absolute;
+  z-index: 1;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.cloud-one {
+  left: -40rpx;
+  bottom: 38rpx;
+  width: 360rpx;
+  height: 48rpx;
+  box-shadow: 92rpx -14rpx 0 rgba(255, 255, 255, 0.72);
+}
+
+.cloud-two {
+  right: 80rpx;
+  bottom: 82rpx;
+  width: 170rpx;
+  height: 30rpx;
+  opacity: 0.72;
+}
+
+.business-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -4rpx;
+}
+
+.business-card {
+  width: 330rpx;
+  min-height: 226rpx;
+  margin-bottom: 20rpx;
+  padding: 28rpx 18rpx 24rpx;
+  border-radius: 16rpx;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 16rpx 36rpx rgba(30, 73, 118, 0.08);
+}
+
+.business-card:active {
+  transform: scale(0.98);
+}
+
+.business-icon {
+  width: 72rpx;
+  height: 72rpx;
+  margin: 0 auto 18rpx;
+  border-radius: 22rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+  font-weight: 800;
+  line-height: 72rpx;
+  text-align: center;
+  box-shadow: 0 12rpx 26rpx rgba(60, 112, 180, 0.18);
+}
+
+.business-icon.loan {
+  background: linear-gradient(135deg, #57a8ff, #1469ee);
+}
+
+.business-icon.deposit {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #75db75, #25ad45);
+}
+
+.business-icon.insurance {
+  background: linear-gradient(135deg, #a590ff, #7654ed);
+}
+
+.business-icon.gold {
+  background: linear-gradient(135deg, #ffd15a, #f2a20b);
+}
+
+.business-title {
+  color: #172033;
+  font-size: 30rpx;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.business-desc {
+  margin-top: 9rpx;
+  color: #8a95a3;
+  font-size: 21rpx;
+  line-height: 1.35;
+}
+
+.bank-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 34rpx;
+  color: #313b48;
+  font-size: 24rpx;
+}
+
+.footer-line {
+  width: 58rpx;
+  height: 1rpx;
+  background: #929ead;
+}
+
+.footer-logo {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 16rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0c8d4c, #1687d9);
+  color: #ffffff;
+  font-size: 18rpx;
+  font-weight: 700;
+  line-height: 30rpx;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0 16rpx 0 8rpx;
+  font-weight: 600;
+}

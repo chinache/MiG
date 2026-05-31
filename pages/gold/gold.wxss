@@ -1,0 +1,37 @@
+.business-page {
+  min-height: 100vh;
+  padding: 48rpx 32rpx;
+  background: #fff8ea;
+}
+
+.placeholder-card {
+  padding: 56rpx 32rpx;
+  border-radius: 28rpx;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 16rpx 44rpx rgba(242, 162, 11, 0.1);
+}
+
+.placeholder-icon {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 0 auto 28rpx;
+  border-radius: 28rpx;
+  background: linear-gradient(135deg, #ffd15a, #f2a20b);
+  color: #ffffff;
+  font-size: 40rpx;
+  font-weight: 800;
+  line-height: 96rpx;
+}
+
+.page-title {
+  color: #172033;
+  font-size: 42rpx;
+  font-weight: 800;
+}
+
+.page-desc {
+  margin-top: 16rpx;
+  color: #7b8794;
+  font-size: 26rpx;
+}
