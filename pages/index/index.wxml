@@ -1,12 +1,11 @@
 <view class="container index-page">
-  <view class="hero card">
+  <view class="hero">
+    <view class="hero-cloud hero-cloud-left"></view>
+    <view class="hero-cloud hero-cloud-right"></view>
+
     <view class="brand-row">
-      <view class="logo-placeholder">
-        <view class="logo-placeholder-text">LOGO</view>
-      </view>
-      <view class="bank-info">
-        <view class="bank-name">龙泉农商银行</view>
-        <view class="bank-subtitle">logo 占位区域</view>
+      <view class="logo-mark">
+        <image wx:if="{{hasLogo}}" class="logo-image" src="/assets/images/logo.png" mode="aspectFit" binderror="onLogoError"></image>
       </view>
     </view>
 
@@ -15,18 +14,25 @@
         <view class="title">知心小助手</view>
         <view class="subtitle">一键测算 更清晰</view>
       </view>
-      <view class="mascot-placeholder">
-        <view class="mascot-placeholder-head"></view>
-        <view class="mascot-placeholder-body">吉祥物占位</view>
+
+      <view class="mascot-scene">
+        <view class="mascot-glow"></view>
+        <image wx:if="{{hasMascot}}" class="mascot-image" src="/assets/images/mascot.png" mode="aspectFit" binderror="onMascotError"></image>
+        <view wx:if="{{!hasMascot}}" class="mascot-fallback">
+          <view class="mascot-fallback-head"></view>
+          <view class="mascot-fallback-body"></view>
+          <view class="mascot-fallback-tail"></view>
+        </view>
       </view>
     </view>
   </view>
 
   <view class="business-section">
-    <view class="section-title">请选择业务类型</view>
     <view class="business-grid">
-      <view wx:for="{{businessEntries}}" wx:key="key" class="business-card card" data-url="{{item.url}}" bindtap="goBusiness">
-        <view class="business-icon {{item.theme}}">{{item.icon}}</view>
+      <view wx:for="{{businessEntries}}" wx:key="key" class="business-card" data-url="{{item.url}}" bindtap="goBusiness">
+        <view class="business-icon {{item.theme}}">
+          <view class="business-icon-symbol">{{item.icon}}</view>
+        </view>
         <view class="business-name">{{item.name}}</view>
         <view class="business-desc">{{item.desc}}</view>
       </view>
