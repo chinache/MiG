@@ -1,11 +1,45 @@
-<view class="container business-page gold-page">
-  <view class="page-header card">
-    <view class="page-title">黄金薪酬</view>
-    <view class="page-desc">黄金薪酬业务页面已创建，当前阶段仅展示基础占位内容。</view>
-  </view>
+<view class="gold-page">
+  <view class="gold-shell">
+    <view class="gold-nav-title">黄金薪酬</view>
 
-  <view class="placeholder-card card">
-    <view class="placeholder-title">功能占位</view>
-    <view class="placeholder-text">后续可在此补充黄金薪酬表单、测算规则和结果展示。</view>
+    <view class="hero-card">
+      <view class="hero-copy">
+        <view class="hero-title">测算黄金业务收入</view>
+        <view class="hero-subtitle">及时准确 收益清晰</view>
+      </view>
+      <view class="mascot-box" aria-label="吉祥物占位区域">
+        <view class="mascot-halo"></view>
+        <view class="mascot-face">
+          <view class="mascot-eye left"></view>
+          <view class="mascot-eye right"></view>
+          <view class="mascot-smile"></view>
+        </view>
+        <view class="mascot-ear left"></view>
+        <view class="mascot-ear right"></view>
+      </view>
+    </view>
+
+    <view class="form-card">
+      <view class="field-row">
+        <view class="field-label">黄金克重（克）</view>
+        <input
+          class="weight-input"
+          type="digit"
+          value="{{gramWeight}}"
+          placeholder="100"
+          placeholder-class="input-placeholder"
+          bindinput="onWeightInput"
+        />
+      </view>
+    </view>
+
+    <button class="calculate-button" bindtap="startCalc">立即测算</button>
+
+    <view wx:if="{{resultVisible}}" class="result-card">
+      <view class="result-title">预计薪酬收入（税前）</view>
+      <view class="result-amount">￥ {{resultAmount}}</view>
+      <view class="result-detail">黄金克重 {{calculatedWeight}} 克 × 8 元/克</view>
+      <view class="result-time">测算时间：{{calculatedTime}}</view>
+    </view>
   </view>
 </view>
