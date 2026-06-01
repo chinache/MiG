@@ -8,9 +8,7 @@
         <view class="hero-subtitle">全面专业  轻松测算</view>
       </view>
       <view class="mascot-box">
-        <view class="mascot-placeholder">
-          <view class="mascot-shield">✓</view>
-        </view>
+        <image class="mascot-img" src="/assets/images/mascot-insurance.png" mode="aspectFit"></image>
       </view>
     </view>
 
