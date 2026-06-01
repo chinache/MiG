@@ -1,11 +1,61 @@
-<view class="container business-page loan-page">
-  <view class="page-header card">
-    <view class="page-title">贷款薪酬</view>
-    <view class="page-desc">贷款薪酬业务页面已创建，当前阶段仅展示基础占位内容。</view>
-  </view>
+<view class="loan-page">
+  <view class="loan-shell">
+    <view class="loan-nav-title">贷款薪酬</view>
 
-  <view class="placeholder-card card">
-    <view class="placeholder-title">功能占位</view>
-    <view class="placeholder-text">后续可在此补充贷款薪酬表单、测算规则和结果展示。</view>
+    <view class="hero-card">
+      <view class="hero-copy">
+        <view class="hero-title">测算贷款业务收入</view>
+        <view class="hero-subtitle">清晰透明  快速准确</view>
+      </view>
+      <view class="mascot-box">
+        <image class="mascot-img" src="/assets/images/mascot-loan.png" mode="aspectFit"></image>
+      </view>
+    </view>
+
+    <view class="form-card">
+      <view class="field-row">
+        <view class="field-label">较年初增加量（万元）</view>
+        <input
+          class="loan-input"
+          type="text"
+          value="{{incrementWan}}"
+          placeholder="请输入"
+          placeholder-class="input-placeholder"
+          bindinput="onIncrementInput"
+        />
+      </view>
+      <view class="field-row with-border">
+        <view class="field-label">贷款平均收息率（%）</view>
+        <input
+          class="loan-input"
+          type="digit"
+          value="{{averageRate}}"
+          placeholder="请输入"
+          placeholder-class="input-placeholder"
+          bindinput="onRateInput"
+        />
+      </view>
+      <view class="field-row with-border">
+        <view class="field-label">新增户数（户）</view>
+        <input
+          class="loan-input"
+          type="number"
+          value="{{newHouseholds}}"
+          placeholder="请输入"
+          placeholder-class="input-placeholder"
+          bindinput="onHouseholdsInput"
+        />
+      </view>
+    </view>
+
+    <button class="calculate-button" bindtap="startCalc">立即测算</button>
+
+    <view wx:if="{{resultVisible}}" class="result-card">
+      <view class="result-title">预计薪酬收入（税前）</view>
+      <view class="result-amount">￥ {{resultAmount}}</view>
+      <view class="result-detail">贷款增量薪酬 ￥{{incrementSalaryText}} + 新增户数薪酬 ￥{{householdSalaryText}}</view>
+      <view class="result-formula">较年初增加量 {{calculatedIncrementWan}} 万元 × 计价系数 {{calculatedCoefficient}}% + 新增户数 {{calculatedHouseholds}} 户 × 100 元</view>
+      <view class="result-time">测算时间：{{calculatedTime}}</view>
+    </view>
   </view>
 </view>
