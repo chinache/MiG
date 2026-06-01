@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/loan/loan",
     "pages/deposit/deposit",
+    "pages/businessDeposit/businessDeposit",
     "pages/insurance/insurance",
     "pages/gold/gold",
     "pages/calc/calc",
