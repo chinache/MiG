@@ -255,3 +255,8 @@ height: 100%;
   color: #8a95a5;
   font-size: 23rpx;
 }
+
+.business-icon.teal {
+  background: linear-gradient(145deg, #58d6cc 0%, #0f9f9a 100%);
+  box-shadow: 0 12rpx 24rpx rgba(15, 159, 154, 0.18);
+}

@@ -20,6 +20,14 @@ Page({
         url: '/pages/deposit/deposit'
       },
       {
+        key: 'businessDeposit',
+        name: '业务带存',
+        desc: '展示业务办理带动存款',
+        icon: '存',
+        theme: 'teal',
+        url: '/pages/businessDeposit/businessDeposit'
+      },
+      {
         key: 'insurance',
         name: '保险薪酬',
         desc: '测算保险业务收入',
