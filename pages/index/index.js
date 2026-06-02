@@ -1,3 +1,6 @@
+const AUTH_VALID_DURATION = 30 * 24 * 60 * 60 * 1000
+const AUTH_URL = '/pages/auth/auth'
+
 Page({
   data: {
     hasLogo: true,
@@ -44,6 +47,29 @@ Page({
         url: '/pages/gold/gold'
       }
     ]
+  },
+
+  onLoad: function () {
+    this.checkAuthStatus()
+  },
+
+  onShow: function () {
+    this.checkAuthStatus()
+  },
+
+  checkAuthStatus: function () {
+    const authStatus = wx.getStorageSync('authStatus')
+    const authTime = wx.getStorageSync('authTime')
+
+    if (!authStatus || !authTime || Date.now() - Number(authTime) > AUTH_VALID_DURATION) {
+      wx.removeStorageSync('authStatus')
+      wx.removeStorageSync('authTime')
+      wx.removeStorageSync('authUser')
+
+      wx.reLaunch({
+        url: AUTH_URL
+      })
+    }
   },
 
   onLogoError: function () {
