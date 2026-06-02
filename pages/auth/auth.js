@@ -1,6 +1,6 @@
 const { authorizedUsers } = require('../../utils/authorizedUsers.js')
 
-const AUTH_VALID_DURATION = 30 * 24 * 60 * 60 * 1000
+const AUTH_VALID_DURATION = 7 * 24 * 60 * 60 * 1000
 const HOME_URL = '/pages/index/index'
 
 Page({
@@ -31,6 +31,7 @@ Page({
 
   redirectIfAuthed: function () {
     if (this.isAuthValid()) {
+      wx.setStorageSync('pendingMarketingReminder', true)
       wx.reLaunch({
         url: HOME_URL
       })
@@ -99,6 +100,7 @@ Page({
     wx.setStorageSync('authUser', {
       employeeNo: employeeNo
     })
+    wx.setStorageSync('pendingMarketingReminder', true)
 
     wx.reLaunch({
       url: HOME_URL
