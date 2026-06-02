@@ -1,4 +1,4 @@
-const AUTH_VALID_DURATION = 30 * 24 * 60 * 60 * 1000
+const AUTH_VALID_DURATION = 7 * 24 * 60 * 60 * 1000
 const AUTH_URL = '/pages/auth/auth'
 
 Page({
@@ -50,7 +50,9 @@ Page({
   },
 
   onLoad: function () {
-    this.checkAuthStatus()
+    if (this.checkAuthStatus()) {
+      this.showPendingMarketingReminder()
+    }
   },
 
   onShow: function () {
@@ -69,7 +71,26 @@ Page({
       wx.reLaunch({
         url: AUTH_URL
       })
+      return false
     }
+
+    return true
+  },
+
+  showPendingMarketingReminder: function () {
+    const pendingMarketingReminder = wx.getStorageSync('pendingMarketingReminder')
+
+    if (!pendingMarketingReminder) {
+      return
+    }
+
+    wx.removeStorageSync('pendingMarketingReminder')
+    wx.showModal({
+      title: '温馨提示',
+      content: '今天你开口营销了吗？',
+      showCancel: false,
+      confirmText: '我知道了'
+    })
   },
 
   onLogoError: function () {
