@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1F2D3D" flood-opacity="0.16"/></filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9AA6B2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<line x1="178" y1="459.0" x2="497" y2="459.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="658" y1="459.0" x2="697" y2="409.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="658" y1="459.0" x2="697" y2="469.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="943" y1="409.0" x2="1002" y2="459.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="943" y1="469.0" x2="1002" y2="459.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1163" y1="459.0" x2="1252" y2="304.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1163" y1="459.0" x2="1252" y2="554.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1413" y1="304.0" x2="1442" y2="252.5" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1413" y1="304.0" x2="1442" y2="307.5" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1413" y1="304.0" x2="1442" y2="362.5" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1678" y1="252.5" x2="1732" y2="304.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1678" y1="307.5" x2="1732" y2="304.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1678" y1="362.5" x2="1732" y2="304.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1413" y1="554.0" x2="1442" y2="497.5" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1413" y1="554.0" x2="1442" y2="552.5" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1413" y1="554.0" x2="1442" y2="607.5" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1678" y1="497.5" x2="1732" y2="589.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1678" y1="552.5" x2="1732" y2="589.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<line x1="1678" y1="607.5" x2="1732" y2="589.0" stroke="#9AA6B2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" />
+<path d="M 80 815 L 80 845 L 1000 845 L 1000 865 L 1000 845 L 1880 845 L 1880 815" fill="none" stroke="#27364A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 226 245 L 198 245 L 198 565 L 226 565" fill="none" stroke="#27364A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1712 175 L 1740 175 L 1740 360 L 1712 360" fill="none" stroke="#27364A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1712 475 L 1740 475 L 1740 800 L 1712 800" fill="none" stroke="#27364A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="35" y="430" width="135" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="102.5" y="465.3333333333333" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">拓客策略</text>
+<rect x="230" y="245" width="215" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="337.5" y="272.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">走访明细</text>
+<rect x="230" y="300" width="215" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="337.5" y="327.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">云走访系统</text>
+<rect x="230" y="355" width="215" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="337.5" y="382.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">客户数据查询平台</text>
+<rect x="230" y="410" width="215" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="337.5" y="437.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">星级客户明细</text>
+<rect x="230" y="465" width="215" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="337.5" y="492.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">客户经理龙虎榜</text>
+<rect x="230" y="520" width="215" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="337.5" y="547.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">同业信息收集平台</text>
+<rect x="505" y="430" width="145" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="577.5" y="465.3333333333333" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">分层分类</text>
+<rect x="705" y="385" width="230" height="48" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="820.0" y="414.0" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">村级客户明细平台</text>
+<rect x="705" y="445" width="230" height="48" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="820.0" y="474.0" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">企微客户星级评价</text>
+<rect x="1010" y="430" width="145" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="1082.5" y="465.3333333333333" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">客户分流</text>
+<rect x="1260" y="275" width="145" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="1332.5" y="310.3333333333333" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">存款策略</text>
+<rect x="1450" y="230" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1560.0" y="257.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">企业代发清单明细</text>
+<rect x="1450" y="285" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1560.0" y="312.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">点滴APP系统</text>
+<rect x="1450" y="340" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1560.0" y="367.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">企微票券系统</text>
+<rect x="1740" y="275" width="145" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="1812.5" y="310.3333333333333" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">存款客户</text>
+<rect x="1790" y="175" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="202.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">员工定期到期明细</text>
+<rect x="1790" y="245" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="272.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">网点到期明细情况</text>
+<rect x="1790" y="315" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="342.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">定期到期反馈系统</text>
+<rect x="1260" y="525" width="145" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="1332.5" y="560.3333333333334" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">贷款策略</text>
+<rect x="1450" y="475" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1560.0" y="502.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">风险信息共享</text>
+<rect x="1450" y="530" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1560.0" y="557.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">企微票券系统</text>
+<rect x="1450" y="585" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1560.0" y="612.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">运营调度平台</text>
+<rect x="1740" y="560" width="145" height="58" rx="12" ry="12" fill="#2F6ECB" stroke="#1F5EB5" stroke-width="2" filter="url(#shadow)"/>
+<text x="1812.5" y="595.3333333333334" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">贷款客户</text>
+<rect x="1790" y="475" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="502.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">贷款流失反馈系统</text>
+<rect x="1790" y="545" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="572.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">到期贷款提前反馈系统</text>
+<rect x="1790" y="615" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="642.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">实时存款明细</text>
+<rect x="1790" y="685" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="712.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">实时贷款明细</text>
+<rect x="1790" y="755" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1900.0" y="782.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">利率定价测算系统</text>
+<rect x="780" y="865" width="500" height="55" rx="12" ry="12" fill="#43A15C" stroke="#3C8D52" stroke-width="2" filter="url(#shadow)"/>
+<text x="1030.0" y="898.8333333333334" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#FFFFFF" text-anchor="middle">考核支撑系统</text>
+<rect x="795" y="950" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="905.0" y="977.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">自建绩效系统</text>
+<rect x="1045" y="950" width="220" height="45" rx="12" ry="12" fill="#F7F9FC" stroke="#D5DBE3" stroke-width="2" filter="url(#shadow)"/>
+<text x="1155.0" y="977.5" font-family="Microsoft YaHei, Microsoft YaHei, sans-serif" font-size="21" font-weight="500" fill="#27364A" text-anchor="middle">客户星级大屏</text>
+</svg>
