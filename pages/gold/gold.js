@@ -1,6 +1,6 @@
 var format = require('../../utils/format')
 
-var GOLD_PAY_PER_GRAM = 8
+var GOLD_PAY_PER_GRAM = 4
 var DEFAULT_GRAM_WEIGHT = ''
 
 function calculateGoldSalary(weight) {
