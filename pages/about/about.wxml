@@ -1,7 +1,7 @@
 <view class="container about-page">
   <view class="header card">
     <view class="header-title">使用说明</view>
-    <view class="header-desc">知心小助手仅用于银行内部绩效薪酬测算参考。</view>
+    <view class="header-desc">知心金算盘仅用于银行内部绩效薪酬测算参考。</view>
   </view>
 
   <view class="info-card card">
@@ -24,5 +24,5 @@
   </view>
 
   <button class="primary-button" bindtap="goCalc">开始使用</button>
-  <view class="footer">知心小助手 · 龙泉农商银行内部工具</view>
+  <view class="footer">知心金算盘 · 龙泉农商银行内部工具</view>
 </view>
