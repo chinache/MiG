@@ -1,3 +1,4 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 var format = require('../../utils/format')
 
 var GOLD_PAY_PER_GRAM = 4
@@ -8,6 +9,14 @@ function calculateGoldSalary(weight) {
 }
 
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     gramWeight: DEFAULT_GRAM_WEIGHT,
     resultVisible: false,

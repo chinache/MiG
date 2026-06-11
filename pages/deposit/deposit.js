@@ -1,3 +1,4 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 var format = require('../../utils/format')
 
 var NEW_BASE_RATE = 0.45
@@ -85,6 +86,14 @@ function trimTrailingZero(value) {
 }
 
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     increaseWan: '',
     interestRate: '',

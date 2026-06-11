@@ -1,3 +1,4 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 var format = require('../../utils/format')
 
 var PRODUCTS = [
@@ -155,6 +156,14 @@ function calculateInsuranceSalary(productKey, optionKey, inputValue) {
 }
 
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     products: PRODUCTS,
     selectedProduct: DEFAULT_PRODUCT,

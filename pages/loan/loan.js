@@ -1,3 +1,4 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 var format = require('../../utils/format')
 
 var WAN_TO_YUAN = 10000
@@ -80,6 +81,14 @@ function calculateLoanSalary(incrementWan, averageRate, newHouseholds) {
 }
 
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     incrementWan: '',
     averageRate: '',
