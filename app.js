@@ -1,6 +1,6 @@
 App({
   globalData: {
-    appName: '知心小助手',
+    appName: '知心金算盘',
     bankName: '龙泉农商银行'
   },
 
