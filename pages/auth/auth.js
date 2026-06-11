@@ -1,9 +1,18 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 const { authorizedUsers } = require('../../utils/authorizedUsers.js')
 
 const AUTH_VALID_DURATION = 7 * 24 * 60 * 60 * 1000
 const HOME_URL = '/pages/index/index'
 
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     employeeNo: '',
     phoneLast4: ''

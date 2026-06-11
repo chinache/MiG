@@ -1,7 +1,16 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 const AUTH_VALID_DURATION = 7 * 24 * 60 * 60 * 1000
 const AUTH_URL = '/pages/auth/auth'
 
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     hasLogo: true,
     hasMascot: true,
@@ -50,6 +59,13 @@ Page({
   },
 
   onLoad: function () {
+    if (wx.showShareMenu) {
+      wx.showShareMenu({
+        withShareTicket: false,
+        menus: ['shareAppMessage', 'shareTimeline']
+      })
+    }
+
     if (this.checkAuthStatus()) {
       this.showPendingMarketingReminder()
     }

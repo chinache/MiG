@@ -1,4 +1,13 @@
+const { getShareAppMessage, getShareTimeline } = require('../../utils/share')
 Page({
+  onShareAppMessage: function () {
+    return getShareAppMessage()
+  },
+
+  onShareTimeline: function () {
+    return getShareTimeline()
+  },
+
   data: {
     mascotSrc: '/assets/images/mascot-deposit.png',
     businessItems: [
