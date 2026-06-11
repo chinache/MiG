@@ -1,7 +1,7 @@
 <view class="auth-page">
   <view class="auth-shell">
     <view class="auth-header">
-      <view class="auth-title">知心小助手</view>
+      <view class="auth-title">知心金算盘</view>
       <view class="auth-subtitle">员工身份验证</view>
       <view class="auth-desc">请输入工号和手机号后 4 位完成验证</view>
     </view>
