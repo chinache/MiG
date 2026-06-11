@@ -89,7 +89,7 @@ Page({
       title: '温馨提示',
       content: '今天你开口营销了吗？',
       showCancel: false,
-      confirmText: '我知道了'
+      confirmText: '马上行动'
     })
   },
 
