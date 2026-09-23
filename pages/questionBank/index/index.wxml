@@ -1,0 +1,69 @@
+<view class="question-page">
+  <view class="question-shell">
+    <view class="question-nav-title">知心题库</view>
+
+    <view class="question-hero">
+      <view class="question-hero-copy">
+        <view class="question-hero-title">试题检索与测试</view>
+        <view class="question-hero-subtitle">{{questionCount}} 道本地试题 · 随时查 随时练</view>
+      </view>
+      <image class="question-hero-image" src="/assets/images/mascot.png" mode="aspectFit"></image>
+    </view>
+
+    <view class="search-entry question-card" bindtap="goSearch">
+      <view class="search-entry-icon">搜</view>
+      <view class="search-entry-text">输入关键词、题号或知识点</view>
+      <view class="search-entry-arrow">›</view>
+    </view>
+
+    <view class="core-grid">
+      <view wx:for="{{coreEntries}}" wx:key="key" class="core-entry question-entry" data-url="{{item.url}}" bindtap="goPage">
+        <view class="core-icon"><view class="core-icon-symbol">{{item.icon}}</view></view>
+        <view class="core-name">{{item.name}}</view>
+        <view class="core-desc">{{item.desc}}</view>
+      </view>
+    </view>
+
+    <view class="summary-row question-section">
+      <view class="summary-card question-card question-entry" data-url="/pages/questionBank/collection/collection?mode=favorite" bindtap="goPage">
+        <view class="summary-value">{{favoriteCount}}</view>
+        <view class="summary-label">收藏题目</view>
+      </view>
+      <view class="summary-card question-card question-entry" data-url="/pages/questionBank/records/records" bindtap="goPage">
+        <view class="summary-value">{{recentRecords.length}}</view>
+        <view class="summary-label">最近练习</view>
+      </view>
+      <view class="summary-card question-card">
+        <view class="summary-value">{{wrongCount}}</view>
+        <view class="summary-label">当前错题</view>
+      </view>
+    </view>
+
+    <view wx:if="{{recentRecords.length}}" class="question-section">
+      <view class="question-section-head">
+        <view class="question-section-title">最近练习</view>
+        <view class="question-section-action" data-url="/pages/questionBank/records/records" bindtap="goPage">全部记录</view>
+      </view>
+      <view class="recent-card question-card">
+        <view wx:for="{{recentRecords}}" wx:key="timeText" class="recent-row">
+          <view>
+            <view class="recent-name">{{item.modeName}}</view>
+            <view class="recent-time">{{item.timeText}}</view>
+          </view>
+          <view class="recent-result">{{item.progressText}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="question-section">
+      <view class="question-section-title category-title">题库分类</view>
+      <view class="category-wrap">
+        <view wx:for="{{categories}}" wx:key="name" class="category-pill" data-category="{{item.name}}" bindtap="goCategory">
+          {{item.name}} · {{item.count}}
+        </view>
+      </view>
+    </view>
+
+    <view class="footer">知心金算盘 · 知心题库</view>
+  </view>
+</view>

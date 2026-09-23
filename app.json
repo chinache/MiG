@@ -9,7 +9,16 @@
     "pages/gold/gold",
     "pages/calc/calc",
     "pages/result/result",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/questionBank/index/index",
+    "pages/questionBank/search/search",
+    "pages/questionBank/practiceSetup/practiceSetup",
+    "pages/questionBank/practice/practice",
+    "pages/questionBank/examSetup/examSetup",
+    "pages/questionBank/exam/exam",
+    "pages/questionBank/examResult/examResult",
+    "pages/questionBank/collection/collection",
+    "pages/questionBank/records/records"
   ],
   "window": {
     "navigationBarTitleText": "知心金算盘",

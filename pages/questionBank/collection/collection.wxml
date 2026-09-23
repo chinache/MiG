@@ -1,0 +1,50 @@
+<view class="question-page">
+  <view class="collection-header">
+    <view>
+      <view class="collection-title">{{pageTitle}}</view>
+      <view class="collection-count">当前 {{questions.length}} 道题</view>
+    </view>
+    <picker wx:if="{{banks.length > 1}}" mode="selector" range="{{banks}}" value="{{bankIndex}}" bindchange="onBankChange">
+      <view class="bank-filter">{{banks[bankIndex]}} ›</view>
+    </picker>
+  </view>
+
+  <view class="collection-content">
+    <view wx:for="{{questions}}" wx:key="id" class="question-list-card question-card">
+      <view data-id="{{item.id}}" bindtap="toggleDetail">
+        <view class="question-meta-row">
+          <view class="question-tag">{{item.typeLabel}}</view>
+          <view class="question-tag muted">{{item.bank}}</view>
+          <view class="collection-number">{{item.number}}</view>
+        </view>
+        <view class="question-stem collection-stem">{{item.stem}}</view>
+        <view class="collection-tip">{{item.expanded ? '收起解析' : '查看答案与解析'}}</view>
+      </view>
+
+      <view wx:if="{{item.expanded}}" class="collection-expanded">
+        <view class="question-option-list">
+          <view wx:for="{{item.displayOptions}}" wx:for-item="option" wx:key="key" class="{{option.className}}">
+            <view class="question-option-key">{{option.key}}</view>
+            <view class="question-option-text">{{option.text}}</view>
+          </view>
+        </view>
+        <view class="question-answer-card">
+          <view class="question-answer-title">正确答案：{{item.answerText}}</view>
+          <view class="question-answer-text">{{item.analysis}}</view>
+          <view wx:if="{{item.knowledgeText}}" class="question-answer-text">知识点：{{item.knowledgeText}}</view>
+        </view>
+        <view wx:if="{{!scope}}" class="remove-action" data-id="{{item.id}}" catchtap="removeQuestion">{{mode === 'favorite' ? '取消收藏' : '移出错题本'}}</view>
+      </view>
+    </view>
+
+    <view wx:if="{{!questions.length}}" class="question-empty question-card">
+      <view class="question-empty-mark">{{mode === 'favorite' ? '藏' : '错'}}</view>
+      <view class="question-empty-title">{{emptyTitle}}</view>
+      <view class="question-empty-desc">{{emptyDesc}}</view>
+    </view>
+
+    <view wx:if="{{questions.length}}" class="question-action-group">
+      <button class="primary-button" bindtap="startPractice">再次练习</button>
+    </view>
+  </view>
+</view>

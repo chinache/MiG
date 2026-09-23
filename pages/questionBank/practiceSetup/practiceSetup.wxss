@@ -1,0 +1,75 @@
+@import "../common.wxss";
+
+.mode-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8rpx;
+  margin-right: -8rpx;
+}
+
+.mode-card {
+  width: calc(50% - 16rpx);
+  min-height: 142rpx;
+  margin: 8rpx;
+  padding: 24rpx 22rpx;
+  border: 1rpx solid transparent;
+}
+
+.mode-card.active {
+  border-color: #79b7ff;
+  background: #eef6ff;
+}
+
+.mode-name {
+  color: #273244;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.mode-card.active .mode-name {
+  color: #1558a8;
+}
+
+.mode-desc {
+  margin-top: 10rpx;
+  color: #7b8794;
+  font-size: 23rpx;
+  line-height: 34rpx;
+}
+
+.setup-card {
+  padding: 0 30rpx;
+}
+
+.setup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 104rpx;
+  border-bottom: 1rpx solid #edf4fb;
+}
+
+picker:last-child .setup-row,
+picker:only-child .setup-row {
+  border-bottom: none;
+}
+
+.setup-label {
+  color: #344960;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.setup-value {
+  max-width: 390rpx;
+  color: #2f78c9;
+  font-size: 27rpx;
+  text-align: right;
+}
+
+.available-tip {
+  margin: 28rpx 0 18rpx;
+  color: #667085;
+  font-size: 25rpx;
+  text-align: center;
+}

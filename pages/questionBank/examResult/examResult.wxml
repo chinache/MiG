@@ -1,0 +1,40 @@
+<view class="question-page">
+  <view class="question-shell" wx:if="{{result}}">
+    <view class="result-hero question-card">
+      <view class="result-label">本次考试得分</view>
+      <view class="result-score">{{result.score}}</view>
+      <view class="result-unit">分</view>
+      <view wx:if="{{result.autoSubmit}}" class="auto-submit-tip">考试时间结束，已自动交卷</view>
+    </view>
+
+    <view class="result-grid">
+      <view class="result-item question-card">
+        <view class="result-value">{{result.correctCount}}</view>
+        <view class="result-name">正确题数</view>
+      </view>
+      <view class="result-item question-card">
+        <view class="result-value">{{result.wrongCount}}</view>
+        <view class="result-name">错误题数</view>
+      </view>
+      <view class="result-item question-card">
+        <view class="result-value">{{result.accuracy}}%</view>
+        <view class="result-name">正确率</view>
+      </view>
+      <view class="result-item question-card">
+        <view class="result-value">{{result.elapsedText}}</view>
+        <view class="result-name">用时</view>
+      </view>
+    </view>
+
+    <view class="result-note question-card question-section">
+      <view class="result-note-title">考试记录</view>
+      <view class="result-note-text">{{result.bank}} · 共 {{result.totalCount}} 题 · 已答 {{result.answeredCount}} 题</view>
+      <view class="result-note-text">错题已自动保存到错题本，可随时回顾和再次练习。</view>
+    </view>
+
+    <view class="question-action-group">
+      <button class="primary-button" bindtap="reviewWrong">错题回顾</button>
+      <button class="secondary-button" bindtap="backHome">返回题库首页</button>
+    </view>
+  </view>
+</view>

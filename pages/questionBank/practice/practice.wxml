@@ -1,0 +1,49 @@
+<view class="question-page">
+  <view class="practice-header">
+    <view>
+      <view class="practice-mode">{{modeName}}</view>
+      <view class="practice-progress">进度 {{progressText}} · 已答 {{answeredCount}} 题</view>
+    </view>
+    <view class="practice-header-actions">
+      <view class="favorite-pill" bindtap="addToWrong">{{wrongSaved ? '已加错题' : '加入错题'}}</view>
+      <view class="favorite-pill" bindtap="toggleFavorite">{{favorite ? '已收藏' : '收藏'}}</view>
+    </view>
+  </view>
+
+  <view class="practice-content" wx:if="{{currentQuestion}}">
+    <view class="question-card practice-question-card">
+      <view class="question-meta-row">
+        <view class="question-tag">{{currentQuestion.typeLabel}}</view>
+        <view class="question-tag muted">{{currentQuestion.bank}}</view>
+        <view class="practice-number">{{currentQuestion.number}}</view>
+      </view>
+      <view class="question-stem practice-stem">{{currentIndex + 1}}. {{currentQuestion.stem}}</view>
+      <view class="question-option-list">
+        <view wx:for="{{currentQuestion.displayOptions}}" wx:key="key" class="{{item.className}}" data-key="{{item.key}}" bindtap="selectOption">
+          <view class="question-option-key">{{item.key}}</view>
+          <view class="question-option-text">{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{submitted}}" class="practice-result {{currentCorrect ? 'correct' : 'wrong'}}">
+      {{currentCorrect ? '回答正确' : '回答错误'}} · 正确答案 {{currentQuestion.answerText}}
+    </view>
+
+    <view wx:if="{{submitted && showAnalysis}}" class="question-answer-card">
+      <view class="question-answer-title">题目解析</view>
+      <view class="question-answer-text">{{currentQuestion.analysis}}</view>
+      <view wx:if="{{currentQuestion.knowledgeText}}" class="question-answer-text">知识点：{{currentQuestion.knowledgeText}}</view>
+    </view>
+
+    <view class="question-toolbar">
+      <view class="question-text-button {{currentIndex === 0 ? 'disabled' : ''}}" bindtap="previousQuestion">上一题</view>
+      <view class="question-text-button" bindtap="toggleAnalysis">{{showAnalysis ? '收起解析' : '查看解析'}}</view>
+      <view class="question-text-button {{currentIndex === questions.length - 1 ? 'disabled' : ''}}" bindtap="nextQuestion">下一题</view>
+    </view>
+
+    <view class="question-action-group">
+      <button class="primary-button" bindtap="submitAnswer">{{submitted ? (currentIndex === questions.length - 1 ? '完成练习' : '进入下一题') : '提交答案'}}</button>
+    </view>
+  </view>
+</view>

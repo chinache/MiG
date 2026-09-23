@@ -1,0 +1,84 @@
+@import "../common.wxss";
+
+.practice-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 116rpx;
+  padding: 18rpx 28rpx;
+  background: #edf6ff;
+  border-bottom: 1rpx solid #edf4fb;
+}
+
+.practice-mode {
+  color: #1f2933;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.practice-progress {
+  margin-top: 8rpx;
+  color: #667085;
+  font-size: 23rpx;
+}
+
+.favorite-pill {
+  padding: 12rpx 22rpx;
+  border-radius: 999rpx;
+  background: #eef6ff;
+  color: #1769e0;
+  font-size: 24rpx;
+}
+
+.practice-header-actions {
+  display: flex;
+  align-items: center;
+  margin-left: 16rpx;
+}
+
+.practice-header-actions .favorite-pill {
+  margin-left: 10rpx;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  font-size: 22rpx;
+}
+
+.practice-content {
+  padding: 24rpx 28rpx 56rpx;
+}
+
+.practice-question-card {
+  padding: 28rpx;
+}
+
+.practice-number {
+  margin-left: auto;
+  color: #8da5bd;
+  font-size: 22rpx;
+}
+
+.practice-stem {
+  margin-top: 22rpx;
+}
+
+.practice-result {
+  margin-top: 22rpx;
+  padding: 22rpx 26rpx;
+  border-radius: 18rpx;
+  font-size: 27rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.practice-result.correct {
+  background: #effdf5;
+  color: #12814d;
+}
+
+.practice-result.wrong {
+  background: #ffffff;
+  color: #ef4444;
+}

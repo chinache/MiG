@@ -1,0 +1,77 @@
+@import "../common.wxss";
+
+.result-hero {
+  padding: 40rpx 30rpx 36rpx;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f8ff 0%, #cfe9ff 100%);
+}
+
+.result-label {
+  color: #58728f;
+  font-size: 26rpx;
+}
+
+.result-score {
+  display: inline-block;
+  margin-top: 10rpx;
+  color: #1677ff;
+  font-size: 64rpx;
+  font-weight: 900;
+  line-height: 80rpx;
+}
+
+.result-unit {
+  display: inline-block;
+  margin-left: 8rpx;
+  color: #2f78c9;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.auto-submit-tip {
+  margin-top: 10rpx;
+  color: #7b8794;
+  font-size: 23rpx;
+}
+
+.result-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 18rpx -8rpx -8rpx;
+}
+
+.result-item {
+  width: calc(50% - 16rpx);
+  margin: 8rpx;
+  padding: 26rpx 12rpx;
+  text-align: center;
+}
+
+.result-value {
+  color: #1558a8;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.result-name {
+  margin-top: 8rpx;
+  color: #7b8794;
+  font-size: 23rpx;
+}
+
+.result-note {
+  padding: 26rpx 28rpx;
+}
+
+.result-note-title {
+  color: #172033;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.result-note-text {
+  margin-top: 12rpx;
+  color: #64748b;
+  font-size: 25rpx;
+  line-height: 40rpx;
+}

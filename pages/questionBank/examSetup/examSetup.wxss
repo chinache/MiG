@@ -1,0 +1,47 @@
+@import "../common.wxss";
+
+.exam-setup-card {
+  padding: 0 30rpx;
+}
+
+.exam-setup-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 108rpx;
+  border-bottom: 1rpx solid #edf4fb;
+}
+
+picker:last-child .exam-setup-row {
+  border-bottom: none;
+}
+
+.exam-setup-label {
+  color: #344960;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.exam-setup-value {
+  max-width: 390rpx;
+  color: #2f78c9;
+  font-size: 27rpx;
+  text-align: right;
+}
+
+.exam-tip {
+  padding: 26rpx 28rpx;
+}
+
+.exam-tip-title {
+  color: #172033;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.exam-tip-text {
+  margin-top: 12rpx;
+  color: #64748b;
+  font-size: 25rpx;
+  line-height: 42rpx;
+}

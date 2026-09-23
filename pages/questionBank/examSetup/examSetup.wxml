@@ -1,0 +1,43 @@
+<view class="question-page">
+  <view class="question-shell">
+    <view class="question-nav-title">模拟考试</view>
+
+    <view class="question-hero">
+      <view class="question-hero-copy">
+        <view class="question-hero-title">随机组卷</view>
+        <view class="question-hero-subtitle">题目从本地题库随机抽取</view>
+      </view>
+      <image class="question-hero-image" src="/assets/images/mascot.png" mode="aspectFit"></image>
+    </view>
+
+    <view class="exam-setup-card question-card question-section">
+      <picker mode="selector" range="{{banks}}" value="{{bankIndex}}" bindchange="onBankChange">
+        <view class="exam-setup-row">
+          <view class="exam-setup-label">选择题库</view>
+          <view class="exam-setup-value">{{banks[bankIndex]}} ›</view>
+        </view>
+      </picker>
+      <picker mode="selector" range="{{countOptions}}" value="{{countIndex}}" bindchange="onCountChange">
+        <view class="exam-setup-row">
+          <view class="exam-setup-label">题目数量</view>
+          <view class="exam-setup-value">{{countOptions[countIndex]}} 题 ›</view>
+        </view>
+      </picker>
+      <picker mode="selector" range="{{timeOptions}}" value="{{timeIndex}}" bindchange="onTimeChange">
+        <view class="exam-setup-row">
+          <view class="exam-setup-label">考试时间</view>
+          <view class="exam-setup-value">{{timeOptions[timeIndex]}} 分钟 ›</view>
+        </view>
+      </picker>
+    </view>
+
+    <view class="exam-tip question-card question-section">
+      <view class="exam-tip-title">考试说明</view>
+      <view class="exam-tip-text">当前题库共 {{availableCount}} 道题。考试中可以随时打开答题卡，时间结束后系统会自动交卷。</view>
+    </view>
+
+    <view class="question-action-group">
+      <button class="primary-button" bindtap="startExam">开始考试</button>
+    </view>
+  </view>
+</view>

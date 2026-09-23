@@ -1,0 +1,38 @@
+<view class="question-page">
+  <view class="question-shell">
+    <view class="question-nav-title">练习设置</view>
+
+    <view class="question-hero">
+      <view class="question-hero-copy">
+        <view class="question-hero-title">选择练习方式</view>
+        <view class="question-hero-subtitle">设置一次即可连续答题</view>
+      </view>
+      <image class="question-hero-image" src="/assets/images/mascot.png" mode="aspectFit"></image>
+    </view>
+
+    <view class="mode-grid question-section">
+      <view wx:for="{{modes}}" wx:key="key" class="mode-card question-card {{selectedMode === item.key ? 'active' : ''}}" data-key="{{item.key}}" bindtap="selectMode">
+        <view class="mode-name">{{item.name}}</view>
+        <view class="mode-desc">{{item.desc}}</view>
+      </view>
+    </view>
+
+    <view class="setup-card question-card question-section">
+      <picker mode="selector" range="{{banks}}" value="{{bankIndex}}" bindchange="onBankChange">
+        <view class="setup-row">
+          <view class="setup-label">选择题库</view>
+          <view class="setup-value">{{banks[bankIndex]}} ›</view>
+        </view>
+      </picker>
+      <picker wx:if="{{selectedMode === 'category'}}" mode="selector" range="{{categories}}" value="{{categoryIndex}}" bindchange="onCategoryChange">
+        <view class="setup-row">
+          <view class="setup-label">选择分类</view>
+          <view class="setup-value">{{categories[categoryIndex]}} ›</view>
+        </view>
+      </picker>
+    </view>
+
+    <view class="available-tip">当前可练习 {{availableCount}} 道题</view>
+    <button class="primary-button" bindtap="startPractice">开始练习</button>
+  </view>
+</view>

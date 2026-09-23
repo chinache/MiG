@@ -1,0 +1,56 @@
+<view class="question-page">
+  <view class="search-fixed">
+    <view class="search-box question-card">
+      <view class="search-symbol">搜</view>
+      <input class="search-input" focus="true" confirm-type="search" value="{{keyword}}" placeholder="题干、选项、答案、解析、知识点或题号" placeholder-class="search-placeholder" bindinput="onInput" />
+      <view wx:if="{{keyword}}" class="search-clear" bindtap="clearSearch">×</view>
+    </view>
+  </view>
+
+  <view class="search-content">
+    <view wx:if="{{searching}}" class="search-status">正在检索…</view>
+
+    <view wx:if="{{searched && !searching}}" class="result-count">找到 {{results.length}} 道相关题目</view>
+
+    <view wx:for="{{results}}" wx:key="id" class="question-list-card question-card">
+      <view data-id="{{item.id}}" bindtap="toggleDetail">
+        <view class="question-meta-row">
+          <view class="question-tag">{{item.typeLabel}}</view>
+          <view class="question-tag muted">{{item.bank}}</view>
+          <view class="question-number">{{item.number}}</view>
+        </view>
+        <view class="question-stem search-stem">{{item.stem}}</view>
+        <view class="answer-preview">正确答案：{{item.answerText}}</view>
+        <view class="expand-tip">{{item.expanded ? '收起完整内容' : '展开选项与解析'}}</view>
+      </view>
+
+      <view wx:if="{{item.expanded}}" class="expanded-content">
+        <view class="question-option-list">
+          <view wx:for="{{item.displayOptions}}" wx:for-item="option" wx:key="key" class="{{option.className}}">
+            <view class="question-option-key">{{option.key}}</view>
+            <view class="question-option-text">{{option.text}}</view>
+          </view>
+        </view>
+        <view class="question-answer-card">
+          <view class="question-answer-title">答案与解析</view>
+          <view class="question-answer-text">正确答案：{{item.answerText}}</view>
+          <view class="question-answer-text">{{item.analysis}}</view>
+          <view wx:if="{{item.knowledgeText}}" class="question-answer-text">知识点：{{item.knowledgeText}}</view>
+        </view>
+        <view class="favorite-action" data-id="{{item.id}}" catchtap="toggleFavorite">{{item.favorite ? '已收藏' : '收藏题目'}}</view>
+      </view>
+    </view>
+
+    <view wx:if="{{searched && !searching && !results.length}}" class="question-empty question-card">
+      <view class="question-empty-mark">搜</view>
+      <view class="question-empty-title">没有找到相关题目</view>
+      <view class="question-empty-desc">试试缩短关键词，或搜索题号和知识点</view>
+    </view>
+
+    <view wx:if="{{!searched}}" class="question-empty question-card search-guide">
+      <view class="question-empty-mark">题</view>
+      <view class="question-empty-title">输入内容即可检索</view>
+      <view class="question-empty-desc">支持题干、A-E 选项、正确答案、解析、题库、分类、知识点和题号</view>
+    </view>
+  </view>
+</view>

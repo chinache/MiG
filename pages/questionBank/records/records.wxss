@@ -1,0 +1,68 @@
+@import "../common.wxss";
+
+.records-shell {
+  min-height: 100vh;
+  padding: 24rpx 28rpx 56rpx;
+}
+
+.records-tabs {
+  display: flex;
+  padding: 8rpx;
+  border-radius: 999rpx;
+  background: #eef1f5;
+}
+
+.records-tab {
+  flex: 1;
+  height: 70rpx;
+  border-radius: 999rpx;
+  color: #667085;
+  font-size: 27rpx;
+  font-weight: 600;
+  line-height: 70rpx;
+  text-align: center;
+}
+
+.records-tab.active {
+  background: #ffffff;
+  color: #1769e0;
+  box-shadow: 0 8rpx 28rpx rgba(23, 56, 102, 0.06);
+}
+
+.record-card {
+  margin-top: 20rpx;
+  padding: 26rpx 28rpx;
+}
+
+.record-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.record-title {
+  flex: 1;
+  min-width: 0;
+  color: #273244;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.record-time {
+  margin-left: 16rpx;
+  color: #8da5bd;
+  font-size: 22rpx;
+}
+
+.record-result {
+  margin-top: 18rpx;
+  color: #2f78c9;
+  font-size: 27rpx;
+  font-weight: 600;
+}
+
+.record-detail {
+  margin-top: 8rpx;
+  color: #667085;
+  font-size: 24rpx;
+}

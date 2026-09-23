@@ -1,0 +1,72 @@
+@import "../common.wxss";
+
+.collection-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 116rpx;
+  padding: 18rpx 28rpx;
+  background: #edf6ff;
+  border-bottom: 1rpx solid #edf4fb;
+}
+
+.collection-title {
+  color: #1f2933;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.collection-count {
+  margin-top: 8rpx;
+  color: #667085;
+  font-size: 23rpx;
+}
+
+.bank-filter {
+  max-width: 300rpx;
+  padding: 12rpx 20rpx;
+  overflow: hidden;
+  border-radius: 999rpx;
+  background: #eef6ff;
+  color: #1769e0;
+  font-size: 23rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collection-content {
+  padding: 4rpx 28rpx 56rpx;
+}
+
+.collection-number {
+  margin-left: auto;
+  color: #8da5bd;
+  font-size: 22rpx;
+}
+
+.collection-stem {
+  margin-top: 20rpx;
+}
+
+.collection-tip {
+  margin-top: 16rpx;
+  color: #8da5bd;
+  font-size: 23rpx;
+  text-align: right;
+}
+
+.collection-expanded {
+  margin-top: 22rpx;
+  padding-top: 22rpx;
+  border-top: 1rpx solid #edf4fb;
+}
+
+.remove-action {
+  margin-top: 22rpx;
+  color: #7b8794;
+  font-size: 24rpx;
+  text-align: center;
+}

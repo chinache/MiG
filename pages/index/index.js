@@ -54,6 +54,14 @@ Page({
         icon: '金',
         theme: 'gold',
         url: '/pages/gold/gold'
+      },
+      {
+        key: 'questionBank',
+        name: '知心题库',
+        desc: '搜题练习与模拟考试',
+        icon: '题',
+        theme: 'blue',
+        url: '/pages/questionBank/index/index'
       }
     ]
   },
