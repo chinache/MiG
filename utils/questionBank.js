@@ -1,7 +1,4 @@
-var complianceQuestions = require('../data/questionBanks/compliance.json')
-var serviceQuestions = require('../data/questionBanks/service.json')
-
-var QUESTION_SOURCES = [complianceQuestions, serviceQuestions]
+var QUESTION_SOURCES = require('../data/questionBanks/generated')
 var TYPE_LABELS = {
   single: '单选题',
   multiple: '多选题',
