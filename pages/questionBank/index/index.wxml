@@ -24,46 +24,6 @@
       </view>
     </view>
 
-    <view class="summary-row question-section">
-      <view class="summary-card question-card question-entry" data-url="/pages/questionBank/collection/collection?mode=favorite" bindtap="goPage">
-        <view class="summary-value">{{favoriteCount}}</view>
-        <view class="summary-label">收藏题目</view>
-      </view>
-      <view class="summary-card question-card question-entry" data-url="/pages/questionBank/records/records" bindtap="goPage">
-        <view class="summary-value">{{recentRecords.length}}</view>
-        <view class="summary-label">最近练习</view>
-      </view>
-      <view class="summary-card question-card">
-        <view class="summary-value">{{wrongCount}}</view>
-        <view class="summary-label">当前错题</view>
-      </view>
-    </view>
-
-    <view wx:if="{{recentRecords.length}}" class="question-section">
-      <view class="question-section-head">
-        <view class="question-section-title">最近练习</view>
-        <view class="question-section-action" data-url="/pages/questionBank/records/records" bindtap="goPage">全部记录</view>
-      </view>
-      <view class="recent-card question-card">
-        <view wx:for="{{recentRecords}}" wx:key="timeText" class="recent-row">
-          <view>
-            <view class="recent-name">{{item.modeName}}</view>
-            <view class="recent-time">{{item.timeText}}</view>
-          </view>
-          <view class="recent-result">{{item.progressText}}</view>
-        </view>
-      </view>
-    </view>
-
-    <view class="question-section">
-      <view class="question-section-title category-title">题库分类</view>
-      <view class="category-wrap">
-        <view wx:for="{{categories}}" wx:key="name" class="category-pill" data-category="{{item.name}}" bindtap="goCategory">
-          {{item.name}} · {{item.count}}
-        </view>
-      </view>
-    </view>
-
     <view class="footer">知心金算盘 · 知心题库</view>
   </view>
 </view>

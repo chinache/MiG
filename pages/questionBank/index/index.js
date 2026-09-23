@@ -1,5 +1,4 @@
 var questionBank = require('../../../utils/questionBank')
-var storage = require('../../../utils/questionStorage')
 
 Page({
   data: {
@@ -9,41 +8,12 @@ Page({
       { key: 'exam', name: '模拟考试', desc: '灵活组卷与计时', icon: '考', url: '/pages/questionBank/examSetup/examSetup' },
       { key: 'wrong', name: '错题本', desc: '错题回顾与重练', icon: '错', url: '/pages/questionBank/collection/collection?mode=wrong' }
     ],
-    categories: [],
-    recentRecords: [],
-    favoriteCount: 0,
-    wrongCount: 0,
     questionCount: 0
   },
 
   onLoad: function () {
-    var questions = questionBank.getAllQuestions()
-    var categoryMap = {}
-    questions.forEach(function (question) {
-      categoryMap[question.category] = Number(categoryMap[question.category] || 0) + 1
-    })
-
     this.setData({
-      categories: Object.keys(categoryMap).map(function (name) {
-        return { name: name, count: categoryMap[name] }
-      }).slice(0, 6),
-      questionCount: questions.length
-    })
-  },
-
-  onShow: function () {
-    var recentRecords = storage.getPracticeRecords().slice(0, 3).map(function (record) {
-      return {
-        modeName: record.modeName,
-        progressText: record.correctCount + '/' + record.answeredCount + ' 题正确',
-        timeText: storage.formatRecordTime(record.createdAt)
-      }
-    })
-
-    this.setData({
-      recentRecords: recentRecords,
-      favoriteCount: storage.getFavorites().length,
-      wrongCount: storage.getWrongIds().length
+      questionCount: questionBank.getAllQuestions().length
     })
   },
 
@@ -53,11 +23,5 @@ Page({
 
   goSearch: function () {
     wx.navigateTo({ url: '/pages/questionBank/search/search' })
-  },
-
-  goCategory: function (event) {
-    wx.navigateTo({
-      url: '/pages/questionBank/practiceSetup/practiceSetup?category=' + encodeURIComponent(event.currentTarget.dataset.category)
-    })
   }
 })
