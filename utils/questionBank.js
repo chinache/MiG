@@ -1,9 +1,49 @@
-var QUESTION_SOURCES = require('../data/questionBanks/generated')
+var pako = require('../vendor/pako_inflate.min')
+var QUESTION_BUNDLE = require('../data/questionBanks/generated')
 var TYPE_LABELS = {
   single: '单选题',
   multiple: '多选题',
   judge: '判断题'
 }
+
+function decodeBase64(base64Text) {
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+  var cleanText = String(base64Text || '').replace(/[^A-Za-z0-9+/=]/g, '')
+  var outputLength = Math.floor(cleanText.length * 3 / 4)
+  if (cleanText.slice(-2) === '==') {
+    outputLength -= 2
+  } else if (cleanText.slice(-1) === '=') {
+    outputLength -= 1
+  }
+
+  var output = new Uint8Array(outputLength)
+  var outputIndex = 0
+  var index
+  for (index = 0; index < cleanText.length; index += 4) {
+    var first = characters.indexOf(cleanText.charAt(index))
+    var second = characters.indexOf(cleanText.charAt(index + 1))
+    var third = characters.indexOf(cleanText.charAt(index + 2))
+    var fourth = characters.indexOf(cleanText.charAt(index + 3))
+    var combined = (first << 18) | (second << 12) | ((third < 0 ? 0 : third) << 6) | (fourth < 0 ? 0 : fourth)
+
+    if (outputIndex < outputLength) output[outputIndex++] = (combined >> 16) & 255
+    if (outputIndex < outputLength) output[outputIndex++] = (combined >> 8) & 255
+    if (outputIndex < outputLength) output[outputIndex++] = combined & 255
+  }
+  return output
+}
+
+function loadQuestionSources(bundle) {
+  if (Array.isArray(bundle)) {
+    return bundle
+  }
+  if (!bundle || bundle.encoding !== 'gzip-base64' || !bundle.data) {
+    throw new Error('题库运行时数据格式无效')
+  }
+  return JSON.parse(pako.inflate(decodeBase64(bundle.data), { to: 'string' }))
+}
+
+var QUESTION_SOURCES = loadQuestionSources(QUESTION_BUNDLE)
 
 function copyQuestion(question) {
   var options = question.options || {}

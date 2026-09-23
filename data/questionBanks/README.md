@@ -1,18 +1,26 @@
 # 题库文件说明
 
-本目录中的 JSON 是题库源文件。微信原生小程序不能直接通过 `require()` 加载普通 JSON 数据文件，因此运行时使用自动生成的 `generated.js`。
+题库源文件保存在 `data/questionBankSources/*.json`。本目录只保存小程序运行时使用的压缩数据包；`generated.js` 和 `generated/part-*.js` 都由脚本生成，请勿直接修改。
 
-替换或新增 JSON 后运行：
+导入“合规天天练”Excel 压缩包：
+
+```bash
+python3 scripts/importComplianceDaily.py /path/to/合规天天练-题库.zip --output-dir data/questionBankSources
+```
+
+替换或新增 JSON 后生成运行时数据：
 
 ```bash
 node scripts/syncQuestionBanks.js
 ```
 
-同步脚本会扫描本目录全部 `.json` 文件、校验必填字段和重复 id，并生成微信小程序可直接加载的数据包。页面代码无需修改。
+同步脚本会扫描 `data/questionBankSources` 中的全部 `.json` 文件，校验必填字段、重复 id 以及答案与选项的对应关系，再生成微信小程序可直接加载的 gzip 压缩数据包。页面代码无需修改。
+
+`project.config.json` 已将题库源文件目录排除在小程序上传包之外，避免源 JSON 与运行时数据重复占用包体。
 
 新增题库时：
 
-1. 复制现有 JSON 文件并替换题目内容。
+1. 在 `data/questionBankSources` 中复制现有 JSON 文件并替换题目内容。
 2. 为每道题提供唯一 `id`。
 3. 运行上述同步脚本。
 
