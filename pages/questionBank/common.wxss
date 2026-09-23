@@ -286,6 +286,9 @@
 }
 
 .question-text-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 132rpx;
   height: 64rpx;
   padding: 0 22rpx;
@@ -294,7 +297,7 @@
   background: #ffffff;
   color: #2f78c9;
   font-size: 25rpx;
-  line-height: 62rpx;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -305,6 +308,16 @@
 
 .question-action-group {
   margin-top: 30rpx;
+}
+
+.question-page .primary-button,
+.question-page .secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .question-action-group .secondary-button {
