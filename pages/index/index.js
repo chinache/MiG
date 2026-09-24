@@ -74,13 +74,17 @@ Page({
       })
     }
 
-    if (this.checkAuthStatus()) {
-      this.showPendingMarketingReminder()
-    }
+    this.authValid = this.checkAuthStatus()
   },
 
   onShow: function () {
-    this.checkAuthStatus()
+    this.authValid = this.checkAuthStatus()
+  },
+
+  onReady: function () {
+    if (this.authValid) {
+      this.showPendingMarketingReminder()
+    }
   },
 
   checkAuthStatus: function () {

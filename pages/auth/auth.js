@@ -22,10 +22,6 @@ Page({
     this.redirectIfAuthed()
   },
 
-  onShow: function () {
-    this.redirectIfAuthed()
-  },
-
   onEmployeeNoInput: function (event) {
     this.setData({
       employeeNo: (event.detail.value || '').trim()
@@ -41,9 +37,7 @@ Page({
   redirectIfAuthed: function () {
     if (this.isAuthValid()) {
       wx.setStorageSync('pendingMarketingReminder', true)
-      wx.reLaunch({
-        url: HOME_URL
-      })
+      this.openHome()
     }
   },
 
@@ -111,8 +105,26 @@ Page({
     })
     wx.setStorageSync('pendingMarketingReminder', true)
 
-    wx.reLaunch({
-      url: HOME_URL
+    this.openHome()
+  },
+
+  openHome: function () {
+    if (this.isRedirecting) {
+      return
+    }
+
+    var page = this
+    this.isRedirecting = true
+    wx.redirectTo({
+      url: HOME_URL,
+      fail: function () {
+        page.isRedirecting = false
+        wx.showModal({
+          title: '页面加载失败',
+          content: '请重新进入小程序后再试',
+          showCancel: false
+        })
+      }
     })
   },
 
